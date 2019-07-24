@@ -30,4 +30,4 @@ Una vez que definimos nuestra user persona, realizamos un [prototipo](https://ma
 
 
 
-Y una vez testeado el prototipo de baja fidelidad se realizó un [prototipo](hhttps://marvelapp.com/1g33f386) de alta fidelidad para que nuestra usuaria pudiera tener una experiencia más real con la aplicación y puedieramos encontrar posibles cambios de la misma.
+Y una vez testeado el prototipo de baja fidelidad se realizó un [prototipo](https://marvelapp.com/1g33f386) de alta fidelidad para que nuestra usuaria pudiera tener una experiencia más real con la aplicación y puedieramos encontrar posibles cambios de la misma.
