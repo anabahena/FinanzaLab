@@ -6,7 +6,7 @@
 
 En la etapa de investigación se realizó una [encuesta](https://docs.google.com/forms/d/e/1FAIpQLSfS0lXYoexZ70SVpinzMgoBVH-CAVXzXkmNaE7N3wdJZhWcyg/viewform), donde se plantearon preguntas para definir a nuestra usuaria, conocer sus necesidades y, posteriormente, definir de qué manera podríamos solucionar esas necesidades con nuestro producto.
 
-Los datos que obtuvimos fueron de 35 encuestadas y fueron los siguientes:
+Los datos que obtuvimos fueron de 35 encuestadas obteniendo lo siguiente:
 
 - El 85.7% tienen entre 21 y 39 años.
 - A la hora de elegir una oferta de trabajo el 80% consideró que cubriera sus necesidades económicas.
@@ -30,5 +30,4 @@ Una vez que definimos nuestra user persona, realizamos un [prototipo](https://ma
 
 
 
-
-Y una vez testeado el prototipo de baja fidelidad se realizó un prototipo de alta fidelidad para que nuestra usuaria pudiera 
+Y una vez testeado el prototipo de baja fidelidad se realizó un [prototipo](https://marvelapp.com/1g33f386/screen/59642613) de alta fidelidad para que nuestra usuaria pudiera tener una experiencia más real con la aplicación y puedieramos encontrar posibles cambios de la misma.
