@@ -6,11 +6,13 @@
     <link rel="icon" type="image/png" href="IMG/logo_finanzas-02.png"/>
     <title>THRIFTSURE</title>
     <link rel="stylesheet" media="(max-width: 375px)" href="style.css"/>
+    <link rel="stylesheet" media="(max-width: 375px)" href="style2.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
 
-    <div class="container" class="dissapear">
+    <div id="container" class="dissapear">
 
     <header class="header">
         <div class="box-logo"><img src="IMG/logo_finanzas-02.png" alt="THRIFTSURE" class="logo"></div>
@@ -63,18 +65,18 @@
     <form class="form">
         <div class="row">
           <div class="col-25">
-            <label for="name">Nombre</label>
+            <label  for="name">Nombre</label>
           </div>
           <div class="col-75">
-            <input type="text" id="name" name="name">
+            <input type="text" id="nombre">
           </div>
         </div>
         <div class="row">
           <div class="col-25">
-            <label for="mail">Edad</label>
+            <label for="age">Edad</label>
           </div>
           <div class="col-75">
-            <input type="text" id="age" name="age">
+            <input type="number" id="age">
           </div>
         </div>
             <div class="row">
@@ -82,31 +84,46 @@
             <label for="mail">Correo</label>
           </div>
           <div class="col-75">
-            <input type="text" id="mail" name="mail">
+            <input type="text" id="mail">
           </div>
         </div>
             <div class="row">
           <div class="col-25">
-            <label for="mail">Contraseña</label>
+            <label for="password">Contraseña</label>
           </div>
           <div class="col-75">
-            <input type="password" id="password" name="password" value="secret">
+            <input type="password" id="password">
           </div>
         </div>
         <br>
         <div class="row">
-                <input type="button" value="Cancelar" class="button" id="btnCancelar">
+                <input type="button" value="Rellenar" class="button" id="btnCancelar">
                 <input type="button" value="Aceptar" class="button" id="btnAceptar">
         </div>
     
     </form>
     </section>
+</div>
 
 
 <section class="perfil" id="sectionPerfil">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam optio fuga at culpa, perferendis recusandae vitae, unde temporibus nobis illum animi quod, aspernatur laudantium debitis saepe reprehenderit tenetur dignissimos quae!</p>
+        
+    <header class="header2">
+            <div class="box-logo2"><img src="IMG/logo_finanzas-02.png" alt="THRIFTSURE" class="logo"></div>
+            <div class="boxFotoPerfil"><img src="IMG/usuario.png" class="fotoPerfil"></div>
+    </header>
+            
+    <section class="buttonPerfil">
+    <p class="ingresos">Ingresos</p>
+    <p class="gastos">Gastos</p>
+    
+    
+    <button class="btnMas" id="buttonIngresos"><span class="icon-plus"></span></button>
+    <button class="btnMenos" id="buttonGastos"><span class="icon-minus"></span></button>
+    </section>
+        
 </section>
-</div>
+
 
 
 
@@ -118,11 +135,11 @@
 <section class="sub-section" id="income">
         <div class="return-logo">
         <figure>
-            <img src="./iconos/return-10.png" alt="return" id="return-arrow">
+            <img src="IMG/return-10.png" alt="return" id="return-arrow">
         </figure>
         <div id="logo-sub">
         <figure>
-            <img src="./IMG/logo_finanzas-02.png" alt="logo" id="logo">
+            <img src="IMG/logo_finanzas-02.png" alt="logo" id="logo">
         </figure>
     </div>
     </div >
@@ -130,49 +147,49 @@
         <div class="container-icons">
             <div class="container-icon-text">
             <figure>
-                <img src="./iconos/icono-01.png" alt="salary" class="icon">
+                <img src="IMG/icono-01.png" alt="salary" class="icon">
             </figure>
             <p>salario</p>
         </div>
         <div class="container-icon-text">
             <figure>
-                <img src="./iconos/icono-02.png" alt="awards" class="icon">
+                <img src="IMG/icono-02.png" alt="awards" class="icon">
             </figure>
             <p>premio</p>
         </div>
         <div class="container-icon-text">
             <figure>
-                <img src="./iconos/icono-03.png" alt="gifts" class="icon">
+                <img src="IMG/icono-03.png" alt="gifts" class="icon">
             </figure>
             <p>regalo</p>
         </div>
         <div class="container-icon-text">
             <figure>
-                <img src="./iconos/icono-04.png" alt="sales" class="icon">
+                <img src="IMG/icono-04.png" alt="sales" class="icon">
             </figure>
             <p>venta</p>
         </div>
         <div class="container-icon-text">
             <figure>
-                <img src="./iconos/icono-05.png" alt="rental" class="icon">
+                <img src="IMG/icono-05.png" alt="rental" class="icon">
             </figure>
             <p>alquiler</p>
         </div>
         <div class="container-icon-text">
             <figure>
-                <img src="./iconos/icono-06.png" alt="refunds" class="icon">
+                <img src="IMG/icono-06.png" alt="refunds" class="icon">
             </figure>
             <p>reembolso</p>
         </div>
         <div class="container-icon-text">
             <figure>
-                <img src="./iconos/icono-07.png" alt="coupons" class="icon">
+                <img src="IMG/icono-07.png" alt="coupons" class="icon">
             </figure>
             <p>cupón</p>
         </div>
         <div class="container-icon-text">
             <figure>
-                <img src="./iconos/icono-09.png" alt="others" class="icon" id="other">
+                <img src="IMG/icono-09.png" alt="others" class="icon" id="other">
             </figure>
             <p>otro</p>
         </div>
@@ -188,11 +205,11 @@
       <section class="sub-section" id="expenses">
             <div class="return-logo">
             <figure>
-                <img src="./iconos/return-10.png" alt="return" id="return-arrow">
+                <img src="IMG/return-10.png" alt="return" id="return-arrow">
             </figure>
             <div id="logo-sub">
             <figure>
-                <img src="./IMG/logo_finanzas-02.png" alt="logo" id="logo">
+                <img src="IMG/logo_finanzas-02.png" alt="logo" id="logo">
             </figure>
         </div>  
        </div> 
@@ -200,49 +217,49 @@
     <div class="container-icons">
         <div class="container-icon-text">
         <figure>
-            <img src="./iconos/gastos-01.png" alt="pay" class="icon">
+            <img src="IMG/gastos-01.png" alt="pay" class="icon">
         </figure>
         <p>Laboratoria</p>
     </div>
     <div class="container-icon-text">
         <figure>
-            <img src="./iconos/gastos-02.png" alt="rent" class="icon">
+            <img src="IMG/gastos-02.png" alt="rent" class="icon">
         </figure>
         <p>renta</p>
     </div>
     <div class="container-icon-text">
         <figure>
-            <img src="./iconos/gastos-03.png" alt="services" class="icon">
+            <img src="IMG/gastos-03.png" alt="services" class="icon">
         </figure>
         <p>servicios</p>
     </div>
     <div class="container-icon-text">
         <figure>
-            <img src="./iconos/gastos-04.png" alt="travel" class="icon">
+            <img src="IMG/gastos-04.png" alt="travel" class="icon">
         </figure>
         <p>viajes</p>
     </div>
     <div class="container-icon-text">
         <figure>
-            <img src="./iconos/gastos-05.png" alt="healt" class="icon">
+            <img src="IMG/gastos-05.png" alt="healt" class="icon">
         </figure>
         <p>salud</p>
     </div>
     <div class="container-icon-text">
         <figure>
-            <img src="./iconos/gastos-06.png" alt="meal" class="icon">
+            <img src="IMG/gastos-06.png" alt="meal" class="icon">
         </figure>
         <p>comida</p>
     </div>
     <div class="container-icon-text">
         <figure>
-            <img src="./iconos/gastos-07.png" alt="car" class="icon">
+            <img src="IMG/gastos-07.png" alt="car" class="icon">
         </figure>
         <p>automóvil</p>
     </div>
     <div class="container-icon-text">
         <figure>
-            <img src="./iconos/gastos-09.png" alt="others" class="icon" id="other">
+            <img src="IMG/gastos-09.png" alt="others" class="icon" id="other">
         </figure>
         <p>otro</p>
     </div>
@@ -255,7 +272,7 @@
     </div>
   </section>
 
-      <section class="transferencia">
+      <section class="transferencia" id="transfer">
             <div>
                 <div class="header-transferencia">
                         <img src="IMG/logo_finanzas-02.png">
@@ -301,11 +318,12 @@
                     <input type="button" id="btn-modal" class="btn-modal" value="ACEPTAR">
                 </div>
             </div>
+        </section>
 
-            <section class="afore">
+            <section class="afore" id="ahorro">
                     <div class="header">
                        <div>
-                           <img src="/logo_finanzas-02.png" alt="" class="logo">
+                           <img src="" alt="" class="logo">
                         </div>
                        <div class="navbar-header">
                            <ul class="nav">
@@ -319,14 +337,14 @@
                    <h2 class="title">AFORE</h2>
                    <p>Vincula tu cuenta de AFORE</p>
                    <div class="plus">
-                   <img src="/plus.png" alt=""/>
+                   <img src="" alt=""/>
                    </div>
                    <p>¿Deseas domiciliar un porcentaje de tu sueldo a tu AFORE?</p><a href="#">Click aquí</a>
                 </section>
                 <section>
                    <div class="domicilia-section">
                        <div>
-                           <img src="/logo_finanzas-02.png" alt="" class="logo">
+                           <img src="" alt="" class="logo">
                        </div>
                    <div class="navbar-header">
                          <h2>DOMICILIA TU AFORE</h2>

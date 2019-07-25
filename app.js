@@ -2,11 +2,14 @@ const buttonRegistro = document.getElementById('btnRegistro');
 const sectionWelcome = document.getElementById ('sectionWelcome');
 const secondSection = document.getElementById ('secondSection');
 const modalSesion = document.getElementById('modalSesion');
-const buttonAceptar = document.getElementById ('btnAceptar');
 const sectionPerfil = document.getElementById ('sectionPerfil');
 const sectionRegistrer = document.getElementById ('sectionRegistrer');
-const modalSesion = document.getElementById('openModal');
 const buttonModal = document.getElementById('ingresarModal');
+const container = document.getElementById('container');
+const btnCancelar = document.getElementById('btnCancelar');
+const buttonAceptar = document.getElementById ('btnAceptar');
+const buttonIngresos = document.getElementById('buttonIngresos');
+const buttonGastos = document.getElementById('buttonGastos');
 
 const getSectionRegistro = ()=> {
     sectionWelcome.classList.add ("disappear");
@@ -19,26 +22,46 @@ const showModal =() => {
   
 const CloseModal =() => {
     document.getElementById('openModal').style.display = 'none';
+
   }
 
   const getSectionPerfil = () =>{
     sectionRegistrer.classList.add("appear");
+    container.classList.add('disappear')
     sectionPerfil.classList.remove("perfil");
   }
 
-  const getSectionPerfil2 = () => {
-    
+  const getSectionPerfil2 = () =>{
+    container.classList.add('disappear');
+    sectionPerfil.classList.remove("perfil");
+  }
 
+  const getSectionIngresos = () =>{
+      
   }
 
 
 
+// Menú hamburguesa
+  const myFunction = () => {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
 
-buttonAceptar.addEventListener('click', getSectionPerfil)
+
+  
+
+
+
+buttonModal.addEventListener('click', getSectionPerfil2);
+buttonAceptar.addEventListener('click', getSectionPerfil);
 modalSesion.addEventListener ('click', showModal);
-modalSesion.addEventListener ('click', CloseModal);
 buttonRegistro.addEventListener("click" ,getSectionRegistro);
-
+buttonModal.addEventListener('click', CloseModal)
 
 
 const destinatario= document.getElementById("destinatario").value;
@@ -48,6 +71,7 @@ let destinity = document.getElementById("destinity");
 let montoConfirm = document.getElementById("monto-a");
 const btnAcept=document.getElementById('btn-yes');
 const btnConfirm=document.getElementById('btn-modal');
+
 const showDate = () =>{
    modalConfirm.style.display="flex";
    modalConfirm.style.visibility="visible";
@@ -65,3 +89,89 @@ const occult = () =>{
 btnAcept.addEventListener("click", showDate);
 btnConfirm.addEventListener("click", occult);
 
+
+
+// Funciones para LocalStorage
+let aName = [];
+let aAge =[];
+let aMail =[];
+let aPassword =[];
+
+
+
+let saveUser =() =>{
+    name = document.getElementById('nombre').value,
+    age = document.getElementById('age').value,
+    mail = document.getElementById('mail').value,
+    password = document.getElementById('password').value;
+
+    aName.push(name);
+    aAge.push(age);
+    aMail.push(mail);
+    aPassword.push(password);
+
+    localStorage.setItem("Nombre", JSON.stringify(aName));
+    localStorage.setItem("Edad", JSON.stringify(aAge));
+    localStorage.setItem("Correo", JSON.stringify(aMail));
+    localStorage.setItem("Contraseña", JSON.stringify(aPassword));
+}
+
+
+
+
+
+buttonAceptar.addEventListener('click', saveUser);
+
+
+
+    const showData = () =>{
+    nombre.value = localStorage.getItem("Nombre");
+    age.value = localStorage.getItem("Edad");
+    mail.value = localStorage.getItem("Correo");
+    password.value = localStorage.getItem("Contraseña");
+    }
+
+
+btnCancelar.addEventListener ('click',  showData);
+
+
+
+
+
+
+
+
+// const createArray = () =>{
+
+//     let prueba = document.getElementById ('prueba');
+//     // prueba.innerHTML="";
+//     let aName = JSON.parse(localStorage.getItem('Nombre'));
+//     let aAge = JSON.parse(localStorage.getItem('Edad'));
+//     let aMail = JSON.parse(localStorage.getItem('Correo'));
+//      let aPassword = JSON.parse(localStorage.getItem('Contraseña'));
+
+
+//     for (let i=0; 1<saveUser.length; i++){
+
+//     fila =document.createElement('tr')
+
+//     celdaName = document.createElement ('td');
+//     celdaEdad = document.createElement ('td');
+//     celdaCorreo = document.createElement ('td')
+//     celdaContraseña = document.createElement ('td')
+
+//     nodeName =document.createTextNode(aName[i]);
+//     nodeAge =document.createTextNode(aAge[i]);
+//     nodeMail =document.createTextNode(aMail[i]);
+//     nodePassword = document.createTextNode (aPassword[i]);
+
+//     fila.appendChild(celdaName.appendChild(nodeName));
+//     fila.appendChild(celdaEdad.appendChild(nodeAge));
+//     fila.appendChild(celdaCorreo.appendChild(nodeMail));
+//     fila.appendChild(celdaContraseña.appendChild(nodePassword));
+
+//     prueba.appendChild(fila); 
+
+//     saveUser()
+// }
+// }

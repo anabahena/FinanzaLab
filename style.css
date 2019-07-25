@@ -5,9 +5,8 @@
     }
     
     body{
-        width: 375px;
-        height: 482px;
-        
+        width: 100vw;
+        height: 100vh;
         color: #FBDFB6;
         padding: 0;
         margin: 0;
@@ -141,7 +140,7 @@
     
     }
     
-    input[type=text], input[type=password] {
+    input[type=text], input[type=password], input[type=number] {
         width: 60%;
         padding: 10px;
         border: 1px solid #842d73;
@@ -158,9 +157,7 @@
       
     
     
-      input[type=button]:hover {
-        background-color: #842d73;
-      }
+
     
       .modalDialog {
         position: fixed;
@@ -426,17 +423,124 @@
         margin-right: auto;
       }
 
-      .domicilia-section{
-        display: none;
-     }
+     
 
-     .sub-section{
+     .sub-section, .sectionPerfil, .perfil, .domicilia-section, .transferencia, .afore {
          display: none;
      }
 
-     .perfil{
-         display: none;
+     .disappear{
+         margin: 0;
+         padding: 0;
      }
+
+     .header2{
+        width: 100%;
+        height: 14%;
+        margin: 0p;
+        padding: 0;
+        background-color: #842d73;
+
+     }
+
+     .box-logo2 {
+        width: 65px;
+        height: 65px;
+        float: right;
+        padding: 2px;
+    }
+    
+    .logo2 {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        
+    }
+
+    .boxFotoPerfil{
+        width: 60px;
+        height: 60px;
+        float: left;
+        padding: 2px;
+    }
+
+    .fotoPerfil{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+
+    }
+
+    @font-face {
+        font-family: 'icomoon';
+        src:  url('fonts/icomoon.eot?8qkdhc');
+        src:  url('fonts/icomoon.eot?8qkdhc#iefix') format('embedded-opentype'),
+          url('fonts/icomoon.ttf?8qkdhc') format('truetype'),
+          url('fonts/icomoon.woff?8qkdhc') format('woff'),
+          url('fonts/icomoon.svg?8qkdhc#icomoon') format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+      
+      [class^="icon-"], [class*=" icon-"] {
+        /* use !important to prevent issues with browser extensions that change fonts */
+        font-family: 'icomoon' !important;
+        speak: none;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+      
+        /* Better Font Rendering =========== */
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      
+      .icon-plus:before {
+        content: "\ea0a";
+        color: green;
+      }
+      .icon-minus:before {
+        content: "\ea0b";
+        color: red;
+      }
+
+      .buttonPerfil{
+          width: 100%;
+          height: 20%;
+      }
+
+      .btnMas{
+          background:transparent;
+          height: 35px;
+          width: 35px;
+          align-content: center;
+          border: none;
+          
+      }
+
+      .icon-plus{
+          align-content: center;
+          width: 20px;
+          height: 20px;
+
+      }
+
+      .gastos{
+          margin: 7px;
+          padding: 0;
+          width: 30%;
+      }
+
+
+
+
+
+  
+     
      
      
      
