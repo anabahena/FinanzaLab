@@ -538,6 +538,89 @@
       }
 
 
+      .section-home{
+        display: flex;
+        box-sizing: border-box;
+        align-items: flex-end;
+        width: 100vw;
+        height: 100vh;
+        background: #FBDFB6;
+      }
+      .menu-icon{
+        display: flex;
+        box-sizing: border-box;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        height: 15%;
+        align-self: flex-end;
+      }
+      .icon-main{
+        display: flex;
+        box-sizing: border-box;
+        align-items: center;
+        justify-content: center;
+        width: 20px;
+        height: 20px;
+      }
+      .icon-main:hover{
+        background: #842d73;
+        width: 70px;
+        height: 70px;
+      }
+      .icon-main a{
+        display: flex;
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 15vw;
+        color: #000;
+      }
+   
+
+      @font-face {
+        font-family: 'icomoon';
+        src:  url('fonts2/icomoon.eot?ut1pwh');
+        src:  url('fonts2/icomoon.eot?ut1pwh#iefix') format('embedded-opentype'),
+          url('fonts2/icomoon.ttf?ut1pwh') format('truetype'),
+          url('fonts2/icomoon.woff?ut1pwh') format('woff'),
+          url('fonts2/icomoon.svg?ut1pwh#icomoon') format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+      ​
+      [class^="icon-"], [class*=" icon-"] {
+        /* use !important to prevent issues with browser extensions that change fonts */
+        font-family: 'icomoon' !important;
+        speak: none;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+      ​
+        /* Better Font Rendering =========== */
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      ​
+      .icon-pig:before {
+        content: "\e900";
+      }
+      .icon-home:before {
+        content: "\e901";
+      }
+      .icon-tab:before {
+        content: "\ea45";
+      }
+   
+   
+   
+
+
 
 
 
