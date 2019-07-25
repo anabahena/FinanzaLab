@@ -6,21 +6,344 @@
     <link rel="icon" type="image/png" href="IMG/logo_finanzas-02.png"/>
     <title>THRIFTSURE</title>
     <link rel="stylesheet" media="(max-width: 375px)" href="style.css"/>
-    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-    <div class="container">
+    <div class="container" class="dissapear">
 
     <header class="header">
-        <img src="IMG/logo_finanzas-02.png" alt="THRIFTSURE" class="logo">
-        <input type="button" value="Iniciar Sesión" class="button"> 
-        <input type="button" value="Registro" class="button">
+        <div class="box-logo"><img src="IMG/logo_finanzas-02.png" alt="THRIFTSURE" class="logo"></div>
     </header>
-    
+    <br>
+    <br>
+    <br>
+    <br>
 
+   <section  id="sectionWelcome" class="sectionWelc">
+    <h1><strong> <img src="IMG/bienvenida1.png" alt="" class="logo-bien">BIENVENIDA<img src="IMG/bienvenida2.png" alt="" class="logo-bien"> </strong></h1>
+    <h3>¿Sabias que THRIFTSURE es una aplicación que te permite controlar tus ingresos y gastos para llevar un mejor control de tus finanzas</h3>
+    <br>
+    <div class="buttons">
+    <input type="button" value="Regístrate" class="button" id="btnRegistro"><br><br>
+    <input type="button" value="Inicia Sesión" class="button" id="modalSesion"> 
+    </div>
 
+  
+    <div id="openModal" class="modalDialog">
+            <div>
+              <a href="#close" title="Close" class="close" onclick="javascript:CloseModal();">X</a>
+              <h2>Inicio de sesión</h2>
+              <br>
+              <div class="login-page">
+                    <div class="form">
+                      <form class="login-form">
+                          <div>
+                        <input class="inputSesion" type="text" placeholder="Correo"/>
+                        <br>
+                        <br>
+                        <input class="inputSesion" type="password" placeholder="Contraseña"/>
+                        </div>
+                        <br>
+                        <button class="button" id="ingresarModal">Ingresar</button>
+                        <p class="message">¿Olvidaste tu contraseña? <a href="#">Ingresa aquí</a></p>
+                      </form>
+                    </div>
+                  </div>
+            </div>
 </div>
+    </section>
+
+  
+
+    <section class="appear" id="sectionRegistrer">
+
+    <h1><strong> <img src="IMG/bienvenida1.png" alt="" class="logo-bien"> REGISTRO <img src="IMG/bienvenida2.png" alt="" class="logo-bien"> </strong></h1>
+
+    <form class="form">
+        <div class="row">
+          <div class="col-25">
+            <label for="name">Nombre</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="name" name="name">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="mail">Edad</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="age" name="age">
+          </div>
+        </div>
+            <div class="row">
+          <div class="col-25">
+            <label for="mail">Correo</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="mail" name="mail">
+          </div>
+        </div>
+            <div class="row">
+          <div class="col-25">
+            <label for="mail">Contraseña</label>
+          </div>
+          <div class="col-75">
+            <input type="password" id="password" name="password" value="secret">
+          </div>
+        </div>
+        <br>
+        <div class="row">
+                <input type="button" value="Cancelar" class="button" id="btnCancelar">
+                <input type="button" value="Aceptar" class="button" id="btnAceptar">
+        </div>
+    
+    </form>
+    </section>
+
+
+<section class="perfil" id="sectionPerfil">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam optio fuga at culpa, perferendis recusandae vitae, unde temporibus nobis illum animi quod, aspernatur laudantium debitis saepe reprehenderit tenetur dignissimos quae!</p>
+</section>
+</div>
+
+
+
+
+
+
+
+
+<section class="sub-section" id="income">
+        <div class="return-logo">
+        <figure>
+            <img src="./iconos/return-10.png" alt="return" id="return-arrow">
+        </figure>
+        <div id="logo-sub">
+        <figure>
+            <img src="./IMG/logo_finanzas-02.png" alt="logo" id="logo">
+        </figure>
+    </div>
+    </div >
+        <h2>INGRESOS</h2>
+        <div class="container-icons">
+            <div class="container-icon-text">
+            <figure>
+                <img src="./iconos/icono-01.png" alt="salary" class="icon">
+            </figure>
+            <p>salario</p>
+        </div>
+        <div class="container-icon-text">
+            <figure>
+                <img src="./iconos/icono-02.png" alt="awards" class="icon">
+            </figure>
+            <p>premio</p>
+        </div>
+        <div class="container-icon-text">
+            <figure>
+                <img src="./iconos/icono-03.png" alt="gifts" class="icon">
+            </figure>
+            <p>regalo</p>
+        </div>
+        <div class="container-icon-text">
+            <figure>
+                <img src="./iconos/icono-04.png" alt="sales" class="icon">
+            </figure>
+            <p>venta</p>
+        </div>
+        <div class="container-icon-text">
+            <figure>
+                <img src="./iconos/icono-05.png" alt="rental" class="icon">
+            </figure>
+            <p>alquiler</p>
+        </div>
+        <div class="container-icon-text">
+            <figure>
+                <img src="./iconos/icono-06.png" alt="refunds" class="icon">
+            </figure>
+            <p>reembolso</p>
+        </div>
+        <div class="container-icon-text">
+            <figure>
+                <img src="./iconos/icono-07.png" alt="coupons" class="icon">
+            </figure>
+            <p>cupón</p>
+        </div>
+        <div class="container-icon-text">
+            <figure>
+                <img src="./iconos/icono-09.png" alt="others" class="icon" id="other">
+            </figure>
+            <p>otro</p>
+        </div>
+        </div>
+        <div class="container-input-button">
+          <h3>monto</h3>
+          <label for="amount">
+          <input type="text" class="box" id="amount-income" required /><br>
+          <input type="button" value="Aceptar" id="button-acept" />
+        </div>
+      </section>
+
+      <section class="sub-section" id="expenses">
+            <div class="return-logo">
+            <figure>
+                <img src="./iconos/return-10.png" alt="return" id="return-arrow">
+            </figure>
+            <div id="logo-sub">
+            <figure>
+                <img src="./IMG/logo_finanzas-02.png" alt="logo" id="logo">
+            </figure>
+        </div>  
+       </div> 
+    <h2>GASTOS</h2>
+    <div class="container-icons">
+        <div class="container-icon-text">
+        <figure>
+            <img src="./iconos/gastos-01.png" alt="pay" class="icon">
+        </figure>
+        <p>Laboratoria</p>
+    </div>
+    <div class="container-icon-text">
+        <figure>
+            <img src="./iconos/gastos-02.png" alt="rent" class="icon">
+        </figure>
+        <p>renta</p>
+    </div>
+    <div class="container-icon-text">
+        <figure>
+            <img src="./iconos/gastos-03.png" alt="services" class="icon">
+        </figure>
+        <p>servicios</p>
+    </div>
+    <div class="container-icon-text">
+        <figure>
+            <img src="./iconos/gastos-04.png" alt="travel" class="icon">
+        </figure>
+        <p>viajes</p>
+    </div>
+    <div class="container-icon-text">
+        <figure>
+            <img src="./iconos/gastos-05.png" alt="healt" class="icon">
+        </figure>
+        <p>salud</p>
+    </div>
+    <div class="container-icon-text">
+        <figure>
+            <img src="./iconos/gastos-06.png" alt="meal" class="icon">
+        </figure>
+        <p>comida</p>
+    </div>
+    <div class="container-icon-text">
+        <figure>
+            <img src="./iconos/gastos-07.png" alt="car" class="icon">
+        </figure>
+        <p>automóvil</p>
+    </div>
+    <div class="container-icon-text">
+        <figure>
+            <img src="./iconos/gastos-09.png" alt="others" class="icon" id="other">
+        </figure>
+        <p>otro</p>
+    </div>
+    </div>
+    <div class="container-input-button">
+      <h3>monto</h3>
+      <label for="amount">
+      <input type="text" class="box" id="amount-income" required /><br>
+      <input type="button" value="Aceptar" id="button-acept" />
+    </div>
+  </section>
+
+      <section class="transferencia">
+            <div>
+                <div class="header-transferencia">
+                        <img src="IMG/logo_finanzas-02.png">
+                </div>
+                <div class="title-transferencia">
+                    <h1>TRANSFERENCIA</h1>
+                </div>
+                <div>
+                    <div class="box-input">
+                        <p>DE:</p>
+                        <input type="email" placeholder="ejemplo@ejemplo.com" class="input-inf">
+                    </div>
+                    <div  class="box-input">
+                        <p>Para:</p>
+                        <input type="email" placeholder="ejemplo@ejemplo.com" class="input-inf" id="destinatario">
+                    </div>
+                    <div  class="box-input">
+                        <p>Moneda:</p>
+                        <select id="select-money">
+                            <option value="mexico">$(MXN)</option>
+                            <option vale="usd">$(USD)</option>
+                            <option value="euro">€ (EURO)</option>
+                        </select>
+                    </div>
+                    <div  class="box-input">
+                        <p>Monto:</p>
+                        <input type="text" placeholder="$0,000" class="input-inf" id="monto">
+                    </div>
+                    <div  class="box-input">
+                        <p>Concepto:</p>
+                        <input type="text"  class="input-inf">
+                    </div>
+                    <div class="btn-acept">
+                        <input type="button" value="ACEPTAR" id="btn-yes" class="btn-yes">
+                    </div>
+                </div>
+                <div class="modal-yes" id="modal-yes">
+                    <h2>¡TRANSFERENCIA EXITOSA!</h2>
+                    <p> Enviado a:</p>
+                    <p id="destinity"></p>
+                    <p>Monto:</p>
+                    <p id="monto-a"></p>
+                    <input type="button" id="btn-modal" class="btn-modal" value="ACEPTAR">
+                </div>
+            </div>
+
+            <section class="afore">
+                    <div class="header">
+                       <div>
+                           <img src="/logo_finanzas-02.png" alt="" class="logo">
+                        </div>
+                       <div class="navbar-header">
+                           <ul class="nav">
+                               <li class="lista"> Inicio</li> <br>
+                               <li class="lista">Transferencia</li> <br>
+                               <li class="lista">Ahorro</li> <br>
+                               <li class="lista">Afore</li> <br>
+                           </ul>
+                       </div>
+                   </div>
+                   <h2 class="title">AFORE</h2>
+                   <p>Vincula tu cuenta de AFORE</p>
+                   <div class="plus">
+                   <img src="/plus.png" alt=""/>
+                   </div>
+                   <p>¿Deseas domiciliar un porcentaje de tu sueldo a tu AFORE?</p><a href="#">Click aquí</a>
+                </section>
+                <section>
+                   <div class="domicilia-section">
+                       <div>
+                           <img src="/logo_finanzas-02.png" alt="" class="logo">
+                       </div>
+                   <div class="navbar-header">
+                         <h2>DOMICILIA TU AFORE</h2>
+                   </div><br>
+                       <h3>Saldo actual</h3> <br><br>
+                       <input type="number" placeholder="$10,000.00" class="ingreso"> <br> <br> <br> <br>
+                       <p>Deseo aportar el <input type="number" placeholder="$">de mi salario</p>
+                       <p>corresponde a <input type="number" placeholder="$">mxn</p> <br><br><br> <br>
+                       <button>Aceptar</button>
+                   </div>
+                </section>
+
+
+
+<script src="app.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
 </body>
 </html>
