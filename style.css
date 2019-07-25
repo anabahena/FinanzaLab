@@ -242,6 +242,8 @@
         left: 13px;
       }
       .sub-section h2 {
+        width: 50%;
+        height: 300px;
         color: #842d73;
         font-weight: 700;
         text-align: center;

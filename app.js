@@ -10,6 +10,8 @@ const btnCancelar = document.getElementById('btnCancelar');
 const buttonAceptar = document.getElementById ('btnAceptar');
 const buttonIngresos = document.getElementById('buttonIngresos');
 const buttonGastos = document.getElementById('buttonGastos');
+const income = document.getElementById ('income');
+const expenses = document.getElementById ('expenses')
 
 const getSectionRegistro = ()=> {
     sectionWelcome.classList.add ("disappear");
@@ -37,7 +39,13 @@ const CloseModal =() => {
   }
 
   const getSectionIngresos = () =>{
-      
+    sectionPerfil.classList.add('perfil');
+    income.classList.remove('sub-section');
+  }
+
+  const getSectionGastos = () =>{
+    sectionPerfil.classList.add('perfil');
+    expenses.classList.remove('sub-section');
   }
 
 
@@ -55,8 +63,8 @@ const CloseModal =() => {
 
   
 
-
-
+buttonGastos.addEventListener ('click', getSectionGastos)
+buttonIngresos.addEventListener('click', getSectionIngresos)
 buttonModal.addEventListener('click', getSectionPerfil2);
 buttonAceptar.addEventListener('click', getSectionPerfil);
 modalSesion.addEventListener ('click', showModal);
